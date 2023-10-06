@@ -9,7 +9,7 @@ const component = createElement(elementType, elementProps, children);
 /**
  Todo: Check the devtool console and copy/paste the output of the log object below
 
- //
+    //  what is component? Object
  
  */
 console.log('what is component?', component);
@@ -17,17 +17,18 @@ console.log('what is component?', component);
 /**
  Todo: Explore `createElement` and explain what this function does
 
+    //  creates a DOM element with 3 parameters : type of the element, the properties and any child element
 
  */
 
 /**
  Todo: check the file index.html and get the id of the app div container
  */
-const containerId = 'Todo what is the root id';
+const containerId = 'app';
 const container = document.getElementById(containerId);
 
 /**
  Todo: Check the implementation of render.
  Use render to render component in the html dom
  */
-render();
+render(component, container);
